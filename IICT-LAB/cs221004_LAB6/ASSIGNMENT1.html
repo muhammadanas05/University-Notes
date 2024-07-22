@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>ASSIGNMENT#1</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td> <input type="text" name="x" id="n" placeholder="Enter a number"> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="square()" >SQUARE</button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="cube()" >CUBE</button> </td>
+        </tr>
+    </table>
+        <div id ="n1"></div>
+        <div id="n2"></div>
+</body>
+
+    <script>
+        function square()
+        {
+            var a,Square;
+            x = parseInt(document.getElementById ("n").value);
+            //Formulae for Square and Cube
+            Square = x*x;
+            document.getElementById ("n1").innerHTML ="Square of "+x+" is : "+Square;
+        }
+        function cube()
+        {
+            var a,Cube;
+            x = parseInt(document.getElementById ("n").value);
+            Cube = x*x*x;
+            document.getElementById ("n2").innerHTML ="Cube of "+x+" is : " +Cube;
+
+        }
+    </script>
+</html>

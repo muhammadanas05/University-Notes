@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <br>
+  <label for="retype-password">Retype Password:</label><br>
+  <input type="password" id="retype-password" name="retype-password"><br>
+  <br>
+  <label for="dob">Date of Birth:</label><br>
+  <input type="date" id="dob" name="dob"><br>
+  <br>
+  <input type="button" value="Submit" onclick="checkPassword()">
+</form> 
+
+<script>
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  var retypePassword = document.getElementById("retype-password").value;
+  if (password == retypePassword) {
+    var username = document.getElementById("username").value;
+    var dob = document.getElementById("dob").value;
+    alert("Username: " + username + "\nPassword: " + password + "\nDate of Birth: " + dob);
+  } else {
+    alert("Passwords do not match. Please try again.");
+  }
+}
+</script>
+
+</body>
+</html>

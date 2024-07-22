@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> FORM </title>
+<style>
+    body{text-align: center;
+        
+}
+    }
+</style>
+</head>
+<body>
+<h1 id="p3" onmousedown="mouseDown()" onmouseup="mouseUp()"></p><center>FORM</center> </h1>
+
+    
+
+<form onsubmit="Function3()">
+<p id="p3" onmousedown="mouseDown()" onmouseup="mouseUp()"><b>1 YOUR BASIC INFO </b></p>
+<br>
+<br>
+Name:<br> <input type = "text" name = "name" placeholder="Write your full name"/>
+<br>
+<br>
+Email:<br> 
+<input type="email" id="email" name="email" placeholder="username@gmail.com"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+<br>
+<br>
+Contact No:<br>
+<input type="tel" id="phone" name="phone" placeholder="0-3##-####-###" 
+      pattern="[0]-[3][0-9]{2}-[0-9]{4}-[0-9]{3}" required> 
+        <!-- <input type ="submit">  -->
+<br>
+<br>
+Website:<br>
+<input type="url" name="website" placeholder="Enter Your Website Link">
+<br> </br>
+Experiance:<br>
+(in years)<br>
+<input type="number" id="quantity" name="quantity" min="1" max="5">
+        <br><br>
+Age:
+<br>
+<p id="p1">
+<input type = "radio" name = "subject" value = "Above 20"/> Above 20 
+<br>
+<input type = "radio" name = "subject" value = "Above 30"/> Above 30
+</p>
+<button onclick="Function1()">Click here if your under age</button>
+<br>
+<br>
+<p id="p3" onmousedown="mouseDown()" onmouseup="mouseUp()"><b>2 Your Profile </b></p>
+<br><br>
+Biography:
+<br>
+<p id="p2" onfocus="Function2(this.id)">
+<textarea rows = "5" cols = "40" name ="biography"></textarea></p>
+<br><br><br>
+Job Role: <br>
+<select name = "dropdown">
+<option value "Teacher" selected> Teacher </option>
+<option value "Banker" selected> Banker </option>
+<option value "Business Owner" selected> Business Owner </option>
+</select>
+<br><br>
+Interest:<br>
+<input type = "checkbox" name = "development" value = "on"/> Development <br>
+<input type = "checkbox" name = "design" value = "on"/> Design<br>
+<input type = "checkbox" name = "business" value = "on"/> Business<br><br>
+<br><br>
+<input type = "button" name = "SUBMIT" value = "SUBMIT" />
+
+</form>
+
+<script>
+    function Function1() {
+      document.getElementById("p1").innerHTML = "UNDER AGE";
+    }
+    function Function2(x) {
+  document.getElementById(x).style.background = "yellow";
+}
+function mouseDown() {
+  document.getElementById("p3").style.color = "red";
+}
+
+function mouseUp() {
+  document.getElementById("p3").style.color = "green";
+}
+function Function3() {
+  alert("The form was submitted");
+}
+</script>
+</body>
+</html>
