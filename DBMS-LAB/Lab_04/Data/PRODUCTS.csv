@@ -1,0 +1,54 @@
+pid, pname, pcategory, pprice, sid
+BT044,Baby Sleeping Bag,Babies & Toys,560.35,1
+BT045,Baby Winter Suit,Babies & Toys,852.02,2
+BT034,Baby Skincare Soft Wipes,Babies & Toys,214.3,1
+BT066,Baby Bath Blue,Babies & Toys,258.3,2
+BT089,Baby Walkers,Babies & Toys,1299.58,2
+BT122,Baby Jumpsuit,Babies & Toys,999.32,2
+BT354,Baby Folding Cradle,Babies & Toys,1500.58,1
+EF052,Royal Fitness Jogging Machine,Exercise & Fitness,40896.23,3
+EF789,Skipping Rope,Exercise & Fitness,253.6,3
+EF222,Ab Flex Zone,Exercise & Fitness,222,4
+EF458,Tummy Trimmer,Exercise & Fitness,302.56,4
+HB052,Clean & Clear Facewash,Health & Beauty,589,5
+HB455,Nova Hair Straightener,Health & Beauty,2050.36,5
+HB424,Acne Facial Gel,Health & Beauty,245.89,4
+HB442,Neem Facewash,Health & Beauty,211.3,4
+HB444,Pour Femme Perfume,Health & Beauty,908.25,5
+HB082,Bioaqua Exfoliating Gel,Health & Beauty,522.96,5
+HB023,Grapeseed Oil,Health & Beauty,154.22,4
+HL058,Silk Curtain,Home & Lifestyle,1050.25,1
+HL060,Printed Silk Cushion Cover,Home & Lifestyle,588.36,1
+HL071,Ethnic Cushion Cover,Home & Lifestyle,299.36,1
+HL500,Spiral Potato Slicer,Home & Lifestyle,488.35,3
+HL600,Clear Glass Jar,Home & Lifestyle,105.2,3
+HL784,Leather Bean Bag,Home & Lifestyle,2047.36,2
+HL025,Elegant Wall Clock,Home & Lifestyle,1422.28,1
+HL008,Cotton Handloom Rug,Home & Lifestyle,688.3,2
+CS222,Cadbury Dairy Milk,Choco & Snacks,450.25,6
+CS254,Crunchy Oats & Honey Bar,Choco & Snacks,78.36,7
+CS121,Kitkat Crunchy,Choco & Snacks,500.36,6
+CS255,Crepe Chocolate Wafers,Choco & Snacks,88.35,6
+CS205,Natural Almond Butter,Choco & Snacks,907.25,7
+CS245,Koko Crunch,Choco & Snacks,178.56,6
+CS285,Choco Cornflakes,Choco & Snacks,302.55,7
+CS295,Nutella Chocolate Jar,Choco & Snacks,800.99,6
+ST555,Boxing Bag,Sports & Travel,3000.25,4
+ST545,Yoga Mat,Sports & Travel,450.25,2
+ST785,Adjustable Dumbbells,Sports & Travel,852.36,3
+LC014,Foldable Iron Stand,Laundry & Cleaning,789.65,3
+LC012,Dust Floor Broom,Laundry & Cleaning,466,3
+LC089,Bath Loofah,Laundry & Cleaning,108.3,2
+LC024,Revolutionary Magic Sweeper,Laundry & Cleaning,893.6,2
+LC047,MicroFiber Mop,Laundry & Cleaning,588.37,1
+LC042,Net Laundry Basket,Laundry & Cleaning,899.21,1
+LC558,Multicolor Cloth Clips,Laundry & Cleaning,75.32,2
+FP044,Fenugreek,Fresh Produce,40.2,6
+FP014,Lemon Grass,Fresh Produce,100.5,6
+FP085,Garlic,Fresh Produce,45.66,7
+FP325,Capsicum,Fresh Produce,58.32,7
+FP657,Dry Kiwi,Fresh Produce,74.2,6
+FP741,Sugarcane,Fresh Produce,150.2,7
+FP123,Blueberry,Fresh Produce,147.3,7
+FP588,Basil Leaves,Fresh Produce,25.3,7
+FP514,Cilantro,Fresh Produce,74.88,7
