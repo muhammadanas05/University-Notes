@@ -1,0 +1,62 @@
+$date
+	Tue Dec 19 12:24:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 1 ! F $end
+$var reg 1 " P $end
+$var reg 1 # Q $end
+$var reg 1 $ R $end
+$scope module dut $end
+$var wire 1 ! F $end
+$var wire 1 " P $end
+$var wire 1 % P_or_R $end
+$var wire 1 # Q $end
+$var wire 1 & Q_or_P $end
+$var wire 1 ' Q_or_P_AND_P_or_R $end
+$var wire 1 $ R $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#25
+1%
+1$
+#50
+0%
+1&
+0$
+1#
+#75
+1!
+1'
+1%
+1$
+#100
+0$
+0#
+1"
+#125
+1$
+#150
+0$
+1#
+#175
+1$
