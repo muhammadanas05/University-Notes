@@ -1,0 +1,103 @@
+Microsoft (R) Macro Assembler Version 5.00                  1/29/24 21:38:52
+                                                             Page     1-1
+
+
+				.MODEL SMALL 
+ 0100				.STACK 100H 
+				 
+ 0000				.DATA 
+ 0000  000A			    STACK_SIZE  DW 10 
+ 0002  0001[			    MY_STACK    DW STACK_SIZE DUP(?) 
+q1.ASM(6): error A2042: Constant expected
+	   ????			
+			 ]	
+				
+ 0004  ????			    TOP         DW ? 
+				 
+ 0000				.CODE 
+ 0000  B8 ---- R		    MOV AX, @DATA 
+ 0003  8E D8			    MOV DS, AX 
+				 
+				    ; Initialize stack 
+ 0005  C7 06 0004 R 0000	    MOV TOP, 0 
+				 
+				    ; Push elements onto the stack 
+ 000B  B8 0001			    MOV AX, 1 
+ 000E  E8 002A R		    CALL PUSH 
+ 0011  B8 0002			    MOV AX, 2 
+ 0014  E8 002A R		    CALL PUSH 
+ 0017  B8 0003			    MOV AX, 3 
+ 001A  E8 002A R		    CALL PUSH 
+				 
+				    ; Pop elements from the stack 
+ 001D  E8 0037 R		    CALL POP 
+ 0020  E8 0037 R		    CALL POP 
+ 0023  E8 0037 R		    CALL POP 
+				 
+				    ; Display results 
+ 0026  B4 4C			    MOV AH, 4CH 
+ 0028  CD 21			    INT 21H 
+				 
+ 002A				PUSH PROC 
+q1.ASM(33): warning A4016: Reserved word used as symbol: PUSH
+				    ; Push AX onto the stack 
+ 002A  8B 1E 0004 R		    MOV BX, TOP 
+ 002E  89 87 0002 R		    MOV MY_STACK[BX], AX 
+ 0032  FF 06 0004 R		    INC TOP 
+ 0036  C3			    RET 
+ 0037				PUSH ENDP 
+				 
+ 0037				POP PROC 
+q1.ASM(41): warning A4016: Reserved word used as symbol: POP
+				    ; Pop value from the stack into AX 
+ 0037  FF 0E 0004 R		    DEC TOP 
+ 003B  8B 1E 0004 R		    MOV BX, TOP 
+ 003F  8B 87 0002 R		    MOV AX, MY_STACK[BX] 
+ 0043  C3			    RET 
+ 0044				POP ENDP 
+				 
+Microsoft (R) Macro Assembler Version 5.00                  1/29/24 21:38:52
+                                                             Page     1-2
+
+
+ 0044				END 
+Microsoft (R) Macro Assembler Version 5.00                  1/29/24 21:38:52
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+DGROUP . . . . . . . . . . . . .  	GROUP
+  _DATA  . . . . . . . . . . . .  	0006	WORD	PUBLIC	'DATA'
+  STACK  . . . . . . . . . . . .  	0100	PARA	STACK	'STACK'
+_TEXT  . . . . . . . . . . . . .  	0044	WORD	PUBLIC	'CODE'
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+MY_STACK . . . . . . . . . . . .  	L WORD	0002	_DATA
+
+POP  . . . . . . . . . . . . . .  	N PROC	0037	_TEXT	Length = 000D
+PUSH . . . . . . . . . . . . . .  	N PROC	002A	_TEXT	Length = 000D
+
+STACK_SIZE . . . . . . . . . . .  	L WORD	0000	_DATA
+
+TOP  . . . . . . . . . . . . . .  	L WORD	0004	_DATA
+
+@CODE  . . . . . . . . . . . . .  	TEXT  _TEXT		
+@CODESIZE  . . . . . . . . . . .  	TEXT  0		
+@DATASIZE  . . . . . . . . . . .  	TEXT  0		
+@FILENAME  . . . . . . . . . . .  	TEXT  q1		
+
+
+     49 Source  Lines
+     49 Total   Lines
+     19 Symbols
+
+  51064 + 465480 Bytes symbol space free
+
+      2 Warning Errors
+      1 Severe  Errors
