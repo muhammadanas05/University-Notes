@@ -1,0 +1,11 @@
+Anas: 2
+kiwi: 2
+apple: 1
+anas: 1
+pineapple: 1
+king: 1
+queen: 1
+Billa: 1
+billa: 1
+Hamza: 1
+mango: 1
